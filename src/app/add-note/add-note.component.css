@@ -1,0 +1,18 @@
+.noteAdded
+{
+    display: inline-block;
+    padding: 12px;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+}
+#btn
+{
+    padding: 5px 2px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+#icon
+{
+    margin-left: 10px;
+}

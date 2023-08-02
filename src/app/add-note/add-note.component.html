@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+
+            <!---will create button with ternary operator and click function--->
+            <button mat-fab extended (click)="onclick()" type="button" class="btn  btn-primary" id="btn">
+                <mat-icon id="icon">add</mat-icon>
+            </button>
+
+            <!--will create if condition my default it will
+              b hide on click it will toggle--->
+            <ng-container *ngIf="visible">
+                <div class="noteAdded">
+                    <h3>Add New Note</h3>
+                    <input type="text" placeholder="Note Id">&nbsp;
+                    <input type="text" placeholder="Note Title" [(ngModel)]="title"><br><br>
+                    <textarea name="textarea" id="" cols="44" rows="4" placeholder="Note Content" [(ngModel)]="content"></textarea><br>
+                    <button (click)="addNote()">Save</button>
+                </div>
+            </ng-container>
+
+        </div>
+    </div>
+</div>

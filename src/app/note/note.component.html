@@ -1,0 +1,22 @@
+<mat-card (mouseover)="showButton = true" (mouseleave)="showButton = false" id="content" class="example">
+  <mat-card-title>
+    <h2 id="modify">{{item.title}}</h2>
+  </mat-card-title>
+  <mat-card-content>
+    <p id="para">{{item.content}}</p>
+  </mat-card-content>
+  <mat-card-actions *ngIf="showButton" class="marginSet"> 
+    <button mat-icon-button extended type="button" id="btn1">
+      <mat-icon color="primary">bookmark</mat-icon>
+    </button>
+    <button mat-icon-button extended type="button">
+      <mat-icon color="primary">lightbulb</mat-icon>
+    </button>
+    <button mat-icon-button extended type="button">
+      <mat-icon color="primary">edit</mat-icon>
+    </button>
+    <button mat-icon-button extended type="button">
+      <mat-icon color="primary">delete</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
